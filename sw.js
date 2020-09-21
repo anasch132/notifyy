@@ -22,6 +22,6 @@ self.addEventListener('push', function(event) {
         ]
     };
     event.waitUntil(
-       await self.ServiceWorkerRegistration.showNotification('hey mom', options)
+        self.ServiceWorkerRegistration.showNotification('hey mom', options)
     );
   }); 
